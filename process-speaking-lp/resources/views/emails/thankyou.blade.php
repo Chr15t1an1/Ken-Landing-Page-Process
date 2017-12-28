@@ -14,7 +14,7 @@
                 <tbody><tr>
                   <td class="m_-2883201427003282024shop-name__cell" style="font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,&quot;Roboto&quot;,&quot;Oxygen&quot;,&quot;Ubuntu&quot;,&quot;Cantarell&quot;,&quot;Fira Sans&quot;,&quot;Droid Sans&quot;,&quot;Helvetica Neue&quot;,sans-serif">
                       <h1 class="m_-2883201427003282024shop-name__text" style="font-weight:normal;font-size:30px;color:#333;margin:0">
-                        <a href="" style="font-size:30px;color:#333;text-decoration:none" target="_blank" data-saferedirecturl="">Hi Coop Sales Team!</a>
+                        <a href="" style="font-size:30px;color:#333;text-decoration:none" target="_blank" data-saferedirecturl="">Hi!</a>
                       </h1>
                   </td>
                     <td class="m_-2883201427003282024order-number__cell" style="font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,&quot;Roboto&quot;,&quot;Oxygen&quot;,&quot;Ubuntu&quot;,&quot;Cantarell&quot;,&quot;Fira Sans&quot;,&quot;Droid Sans&quot;,&quot;Helvetica Neue&quot;,sans-serif;text-transform:uppercase;font-size:14px;color:#999" align="right">

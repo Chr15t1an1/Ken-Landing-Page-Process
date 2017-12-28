@@ -15,6 +15,10 @@ class SpeakingLpProcessController extends Controller
     public function index()
     {
        $order = SpeakingLpProcess::all();
+       if (empty($order)) {
+
+         $order = array();
+       }
        return view('home', compact('order'));
     }
 
@@ -26,23 +30,50 @@ class SpeakingLpProcessController extends Controller
      */
     public function store(Request $request)
     {
+      #Take Inputs
         $name = $request->input('name');
         $company = $request->input('company');
         $phone = $request->input('phone');
         $email = $request->input('email');
 
+        #Assign Inputs to attributes
         $a = new SpeakingLpProcess;
         $a->name  = $name;
         $a->company = $company;
         $a->phone = $phone;
         $a->email = $email;
 
-        $a->save();
 
-        static::notify_sales($a);
-        static::send_thankyou_email($a->email);
-        // static::notify_hubspots($a);
-        return redirect('http://google.com');
+        #Try to save
+        try {
+          $a->save();
+        } catch (\Exception $e) {
+            \Bugsnag::notifyError('ErrorType', 'Issue Saving Form Data '.$e);
+          return redirect('http://google.com');
+        }
+
+#try to notif Sales
+        try {
+          static::notify_sales($a);
+        } catch (\Exception $e) {
+            \Bugsnag::notifyError('ErrorType', 'Issue With Sales Email '.$e);
+        }
+
+#try to notif user
+        try {
+            static::send_thankyou_email($a->email);
+        } catch (\Exception $e) {
+            \Bugsnag::notifyError('ErrorType', 'Issue With thankyou Email '.$e);
+        }
+
+#try to redirect 
+        try {
+            return redirect('http://google.com');
+        } catch (\Exception $e) {
+            \Bugsnag::notifyError('ErrorType', 'Issue With Redirect '.$e);
+        }
+
+
     }
 
 
