@@ -15,6 +15,23 @@
                     @endif
 
                     You are logged in!
+                    <br/>  <br/>  <br/>
+
+
+                    <?php
+
+                    foreach ($order as $a) {
+                      echo $a->name."<br/>".$a->phone."<br/>".$a->company." - ".$a->email."<hr/>";
+                    }
+
+
+
+
+
+                    ?>
+
+
+
                 </div>
             </div>
         </div>
