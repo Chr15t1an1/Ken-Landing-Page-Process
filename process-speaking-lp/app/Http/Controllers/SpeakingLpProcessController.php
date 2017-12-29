@@ -49,7 +49,9 @@ class SpeakingLpProcessController extends Controller
           $a->save();
         } catch (\Exception $e) {
             \Bugsnag::notifyError('ErrorType', 'Issue Saving Form Data '.$e);
-          return redirect('http://google.com');
+
+            return 'Error Storing data';
+        //  return redirect('http://google.com');
         }
 
 #try to notif Sales
@@ -57,6 +59,8 @@ class SpeakingLpProcessController extends Controller
           static::notify_sales($a);
         } catch (\Exception $e) {
             \Bugsnag::notifyError('ErrorType', 'Issue With Sales Email '.$e);
+
+            return 'Error Sending email ';
         }
 
 #try to notif user
@@ -64,11 +68,13 @@ class SpeakingLpProcessController extends Controller
             static::send_thankyou_email($a->email);
         } catch (\Exception $e) {
             \Bugsnag::notifyError('ErrorType', 'Issue With thankyou Email '.$e);
+
         }
 
-#try to redirect 
+#try to redirect
         try {
-            return redirect('http://google.com');
+          return "Thank you";
+            //return redirect('http://google.com');
         } catch (\Exception $e) {
             \Bugsnag::notifyError('ErrorType', 'Issue With Redirect '.$e);
         }
