@@ -40,9 +40,12 @@
         <table class="m_-2883201427003282024container" style="width:560px;text-align:left;border-spacing:0;border-collapse:collapse;margin:0 auto">
           <tbody><tr>
             <td style="font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,&quot;Roboto&quot;,&quot;Oxygen&quot;,&quot;Ubuntu&quot;,&quot;Cantarell&quot;,&quot;Fira Sans&quot;,&quot;Droid Sans&quot;,&quot;Helvetica Neue&quot;,sans-serif">
-            <h2 style="font-weight:normal;font-size:24px;margin:0 0 10px">Thank you for your Speaking Request.</h2>
+            <h2 style="font-weight:normal;font-size:24px;margin:0 0 10px">Thank you for your request.</h2>
             <p style="color:#777;line-height:150%;font-size:16px;margin:0">
 We will be in touch shortly. <br>
 If you have any questions call or email The Knowledge Coop <a href="mailto:info@knowledgecoop.com" value="info@knowledgecoop.com" target="_blank">info@knowledgecoop.com</a> <br/><a href="tel:(360)%20342-6176" value="+13603426176" target="_blank">+1 (360) 342-6176</a><br>
 </p>
 <br>
+
+
+<img src="https://cdn.shopify.com/s/files/1/1311/0223/t/7/assets/logo.png?12734305210376573296"/>
