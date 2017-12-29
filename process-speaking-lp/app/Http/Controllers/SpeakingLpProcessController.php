@@ -50,8 +50,8 @@ class SpeakingLpProcessController extends Controller
         } catch (\Exception $e) {
             \Bugsnag::notifyError('ErrorType', 'Issue Saving Form Data '.$e);
 
-            return 'Error Storing data';
-        //  return redirect('http://google.com');
+
+         return redirect('https://www.knowledgecoop.com/pages/ken-speaks?msg=er');
         }
 
 #try to notif Sales
@@ -59,8 +59,6 @@ class SpeakingLpProcessController extends Controller
           static::notify_sales($a);
         } catch (\Exception $e) {
             \Bugsnag::notifyError('ErrorType', 'Issue With Sales Email '.$e);
-
-            return 'Error Sending email ';
         }
 
 #try to notif user
@@ -73,8 +71,7 @@ class SpeakingLpProcessController extends Controller
 
 #try to redirect
         try {
-          return "Thank you";
-            //return redirect('http://google.com');
+            return redirect('https://www.knowledgecoop.com/pages/ken-speaks?msg=ty');
         } catch (\Exception $e) {
             \Bugsnag::notifyError('ErrorType', 'Issue With Redirect '.$e);
         }
