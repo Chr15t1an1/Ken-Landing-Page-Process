@@ -87,8 +87,8 @@ class SpeakingLpProcessController extends Controller
        Mail::send('emails.sales',$data, function ($message) use ($email)
        {
         $message->from('auto-notif@knowledgecoop.com', 'Form Notification');
-       $message->to('ccampbell@sapphirebd.com'); //Send to Sales
-		   $subject = "Speaking Request Submission";
+       $message->to('sales@knowledgecoop.com'); //Send to Sales
+		   $subject = "Ken Speaking Request Submission";
 		   $message->subject($subject);
        });
     }
