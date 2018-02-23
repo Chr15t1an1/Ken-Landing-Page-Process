@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::post('/form-process/kenSpeakingLp', 'SpeakingLpProcessController@store');
+Route::post('/form-process/livece', 'LiveceController@store');
