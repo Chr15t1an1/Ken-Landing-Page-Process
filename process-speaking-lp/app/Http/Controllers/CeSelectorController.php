@@ -41,7 +41,8 @@ class CeSelectorController extends Controller
         $cart = $request->input('cart');
         $email = $request->input('email');
 
-return "Cart ".$cart;
+// return "Cart ".$cart;
+return "Email ".$email;
 
 
         #Assign Inputs to attributes
