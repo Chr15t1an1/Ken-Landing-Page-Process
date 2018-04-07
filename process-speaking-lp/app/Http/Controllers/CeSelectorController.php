@@ -36,10 +36,14 @@ class CeSelectorController extends Controller
     public function store(Request $request)
     {
 
-      return $request;
+      // return $request;
       #Take Inputs
-        $class = $request->input('cart');
+        $cart = $request->input('cart');
         $email = $request->input('email');
+
+return "Cart ".$cart;
+
+
         #Assign Inputs to attributes
         $a = new ceSelector;
         $a->class  = $class;
