@@ -35,6 +35,8 @@ class CeSelectorController extends Controller
      */
     public function store(Request $request)
     {
+
+      return $request;
       #Take Inputs
         $class = $request->input('cart');
         $email = $request->input('email');
