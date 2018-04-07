@@ -47,10 +47,10 @@ class CeSelectorController extends Controller
 
         #Assign Inputs to attributes
         $a = new ceSelector;
-        $a->class  = $class;
+        $a->cart  = $cart;
         $a->email = $email;
 
-        $a->save();
+        // $a->save();
 
         #Try to save
         try {
